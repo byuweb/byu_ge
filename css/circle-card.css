@@ -1,8 +1,9 @@
+div.view-students div.circle-button a{color: #FFF;}
 .circle-card {
   width: 100%;
   display: flex;
 }
-
+.circle-image a {display:flex;justify-content: center;}
 .circle-card .circle-button {
   width: 100%;
   display: flex;
