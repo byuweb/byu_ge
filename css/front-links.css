@@ -1,0 +1,111 @@
+/*Desktop View*/
+
+@media screen and (min-width: 961px) {
+  .view-front-page-links .view-content {
+    display: grid;
+    width: 100%;
+    grid-template-rows: auto 200px;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-areas: 'students faculty new-ge' 'core core core';
+    grid-gap: 20px;
+  }
+
+  .link-card .title-area {
+    height: 60px;
+    font-size: 18px;
+  }
+}
+
+/*Tablet View*/
+
+@media screen and (max-width: 960px) and (min-width: 541px) {
+  .view-front-page-links .view-content {
+    display: grid;
+    width: 100%;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: 'students faculty' 'new-ge core';
+    grid-gap: 20px;
+  }
+
+  .link-card .title-area {
+    height: 20%;
+    font-size: 16px;
+  }
+
+  .view-front-page-links .views-row-4 img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .link-card .title-area {
+    height: 20%;
+    z-index: 5;
+    font-size: 16px;
+  }
+
+  .link-card {
+    height: 50vw;
+  }
+
+  .view-front-page-links img {
+    position: relative;
+  }
+
+  .view-front-page-links .views-row-1 img {
+    top: -40%;
+  }
+
+  .view-front-page-links .views-row-2 img {
+    top: -30%;
+  }
+
+  .view-front-page-links .views-row-3 img {
+    top: -60%;
+  }
+
+  .view-front-page-links .views-row-4 img {
+    height: 100%;
+    width: unset;
+  }
+}
+
+/*Common Styles*/
+
+.view-front-page-links .views-row-1 { grid-area: students }
+.view-front-page-links .views-row-2 { grid-area: faculty }
+.view-front-page-links .views-row-3 { grid-area: new-ge }
+.view-front-page-links .views-row-4 { grid-area: core }
+
+.link-card {
+  position: relative;
+  border: 2px solid gray;
+  width: 100%;
+  overflow: hidden;
+  border-top: none;
+}
+
+.link-card img {
+  width: 100%;
+}
+
+.link-card .text-wrapper {
+  text-align: center;
+}
+
+.link-card .title-area {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #002e5d;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white !important;
+  font-family: "Ringside Narrow A", "Ringside Narrow B", sans-serif;
+}

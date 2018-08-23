@@ -1,0 +1,115 @@
+.view-foundation-documents {
+}
+
+.view-foundation-documents .views-field-field-doc-link a {
+  line-height: 40px;
+}
+
+#quicktabs-foundation_documents .item-list a {
+  font-family: "Ringside Narrow A", "Ringside Narrow B", sans-serif;
+  background: none;
+  text-align: center;
+  line-height: 16px;
+  vertical-align: text-bottom;
+  padding-bottom: 4px;
+  white-space: normal;
+}
+
+#quicktabs-foundation_documents .item-list li.active a {
+  border-bottom: solid 4px #0057B8;
+  padding-bottom: 0;
+}
+
+/*Individual and Society Tab*/
+
+#quicktabs-foundation_documents .item-list li:nth-child(1) {
+  background: url('http://localhost/ge_new/sites/default/files/Society-01.png') no-repeat center bottom;
+  background-size: contain;
+}
+
+/*Skills Tab*/
+
+#quicktabs-foundation_documents .item-list li:nth-child(2) {
+  background: url('http://localhost/ge_new/sites/default/files/Skills-01.png') no-repeat center bottom;
+  background-size: contain;
+}
+
+/*Arts, Letters, and Science Tab*/
+
+#quicktabs-foundation_documents .item-list li:nth-child(3) {
+  background: url('http://localhost/ge_new/sites/default/files/Letters-01.png') no-repeat center bottom;
+  background-size: contain;
+}
+
+#quicktabs-foundation_documents .item-list ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+#quicktabs-foundation_documents .item-list li {
+  display: inherit;
+}
+
+/*Desktop Size*/
+
+@media screen and (min-width: 1025px) {
+
+  .view-foundation-documents {
+    border: solid 1px #666666;
+    width: 66%;
+    height: 400px;
+    padding: 60px 20px;
+  }
+
+  #quicktabs-foundation_documents .item-list li a {
+    font-size: 16px;
+    height: 150px;
+    width: 200px;
+    line-height: 150px;
+  }
+
+  #quicktabs-foundation_documents .block-views {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .foundation-document-image {
+    width: 32%;
+    height: 400px;
+    border: solid 1px #666666;
+  }
+}
+
+/*Tablet Size*/
+
+@media screen and (max-width: 1024px) and (min-width: 681px) {
+
+  .view-foundation-documents {
+    border: solid 1px #666666;
+    padding: 20px;
+    height: 320px;
+  }
+
+  #quicktabs-foundation_documents .item-list li a {
+    font-size: 16px;
+    height: 100px;
+    width: 125px;
+  }
+}
+
+/*Mobile Size*/
+
+@media screen and (max-width: 680px) {
+
+  #quicktabs-foundation_documents .item-list a {
+    height: auto;
+    white-space: normal;
+    width: inherit;
+    font-size: 14px;
+  }
+
+  #quicktabs-foundation_documents .item-list li {
+    height: 80px;
+    width: 96px;
+  }
+}

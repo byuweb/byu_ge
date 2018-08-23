@@ -1,0 +1,88 @@
+.circle-card {
+  width: 100%;
+  display: flex;
+}
+
+.circle-card .circle-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  font-size: 18px;
+  padding: 5px;
+  background-color: #002e5d;
+  line-height: 20px;
+  color: white !important;
+  font-family: "Ringside Narrow A", "Ringside Narrow B", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.view-students .view-content,
+.view-faculty .view-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 681px) {
+
+  .circle-card {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .circle-card .circle-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .circle-card img {
+    border: solid 1px #666666;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    overflow: hidden;
+    align-self: center;
+    width: 70%;
+  }
+
+  .view-students .views-row,
+  .view-faculty .views-row {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+
+  .circle-card {
+    flex-direction: column-reverse;
+  }
+
+  .circle-card .circle-image {
+    height: 50vw;
+    overflow: hidden;
+    border: solid 1px #666666;
+  }
+
+  .circle-card img {
+    width: 100%;
+  }
+
+  .views-students .views-row,
+  .view-faculty .views-row {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 541px) {
+  #page-title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #page-title {
+    text-align: center;
+  }
+}

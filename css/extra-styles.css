@@ -1,0 +1,76 @@
+/*Style for the admin toolbar.*/
+
+#admin-menu {
+  font-size: 12px;
+}
+
+#admin-menu-icon img {
+  width: 25px;
+  height: 25px;
+}
+
+/*Extras for the front page calendar block*/
+
+.block-byu-calendar .block-title{
+  text-align: center;
+}
+
+.block-byu-calendar .tile-container {
+  display: flex;
+  justify-content: center;
+  height: 410px;
+  overflow: hidden;
+}
+
+/*Styles for the footer*/
+
+.view-social-media-links .views-row > a {
+  line-height: 20px;
+}
+
+.view-social-media-links {
+  padding-bottom: 30px;
+}
+
+.view-footer-contact .field-content {
+  line-height: 20px;
+}
+
+.view-footer-contact .field-content a {
+  line-height: 30px;
+}
+
+.view-related-offices {
+  padding-bottom: 20px;
+}
+
+.view-related-offices .field-content a {
+  line-height: 30px;
+}
+
+/*YouTube Styles*/
+
+.view-video-testimonial .views-field-body .field-content {
+  position: relative;
+  padding-bottom: 50%;
+}
+
+.block-views-video-testimonial-block .block-title {
+  text-align: center;
+}
+
+iframe[src*=youtube] {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/*Hide the Hero Banner in smaller viewports.*/
+
+@media screen and (max-width: 540px) {
+  byu-hero-banner.title-only {
+    display: none;
+  }
+}

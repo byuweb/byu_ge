@@ -1,0 +1,26 @@
+.block-views-ge-office-contact-block .block-title {
+  text-align: center;
+}
+
+.office-contact * {
+  padding: 15px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 541px) {
+  .office-contact .office-phone,
+  .office-contact .office-location {
+    border-right: 2px gray solid;
+  }
+
+  .office-contact {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .office-contact * {
+    text-align: center;
+  }
+}
