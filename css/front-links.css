@@ -91,8 +91,9 @@
   width: 100%;
 }
 
-.link-card .text-wrapper {
+.link-card .title-area a {
   text-align: center;
+  color: white;
 }
 
 .link-card .title-area {
@@ -106,6 +107,5 @@
   background-color: #002e5d;
   text-transform: uppercase;
   font-weight: bold;
-  color: white !important;
   font-family: "Ringside Narrow A", "Ringside Narrow B", sans-serif;
 }

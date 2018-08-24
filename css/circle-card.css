@@ -1,5 +1,5 @@
-div.view-students div.circle-button a,
-div.view-faculty div.circle-button a {
+.view-students .circle-button a,
+.view-faculty .circle-button a {
   color: #FFF;
 }
 
