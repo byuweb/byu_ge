@@ -3,13 +3,13 @@
 }
 
 .office-contact * {
-  padding: 15px;
+  padding: 5px 10px;
   font-weight: bold;
 }
 
 @media screen and (min-width: 541px) {
-  .office-contact .office-phone,
-  .office-contact .office-location {
+  .office-contact .views-field-field-phone,
+  .office-contact .views-field-field-room-number {
     border-right: 2px gray solid;
   }
 
