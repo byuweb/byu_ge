@@ -84,9 +84,12 @@
     margin-bottom: 10px;
   }
 
-  .contact-card .views-field-field-phone,
+  .contact-card .views-field-field-phone {
+    padding-right: 10px;
+  }
+
   .contact-card .views-field-field-room-number {
-    padding: 0 15px;
+    padding-left: 10px;
   }
 
   .contact-card .views-field-field-phone {
