@@ -3,21 +3,24 @@
 @media screen and (min-width: 961px) {
   .contact-card {
     display: grid;
-    grid-template-rows: 40px 20px 20px 20px;
+    grid-template-rows: 15px 15px 20px 20px 20px;
     grid-template-columns: 130px calc(70% - 91px) calc(30% - 39px);
     grid-template-areas:
-      'picture title title'
-      'picture description phone'
-      'picture description email'
-      'picture description location';
+      'picture name name'
+      'picture position position'
+      'picture description contact'
+      'picture description contact'
+      'picture description contact';
     grid-gap: 10px;
     font-family: "Ringside Narrow A", "Ringside Narrow B", sans-serif;
     margin-bottom: 20px;
   }
 
-  .contact-card .views-field-field-phone { grid-area: phone }
-  .contact-card .views-field-field-e-mail { grid-area: email }
-  .contact-card .views-field-field-room-number { grid-area: location }
+  .contact-card .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 /*Tablet View*/
@@ -25,11 +28,12 @@
 @media screen and (max-width: 960px) and (min-width: 599px) {
   .contact-card {
     display: grid;
-    grid-template-rows: 40px 80px 20px;
+    grid-template-rows: 15px 15px 80px 20px;
     grid-template-columns: 130px auto;
     grid-gap: 10px;
     grid-template-areas:
-      'picture title'
+      'picture name'
+      'picture position'
       'picture description'
       'contact contact';
     font-family: "Ringside Narrow A", "Ringside Narrow B", sans-serif;
@@ -69,15 +73,15 @@
     margin-bottom: 10px;
   }
 
-  .contact-card .views-field-field-position {
-    margin-bottom: 10px;
-  }
-
   .contact-card .contact {
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 10px;
+  }
+
+  .contact-card .views-field-field-position {
+    margin-bottom: 10px;
   }
 
   .contact-card .views-field-field-phone,
@@ -105,21 +109,24 @@
   text-align: center;
 }
 
-.contact-card img {
+.contact-card .views-field-field-image {
+  grid-area: picture;
+  overflow: hidden;
+}
+
+.contact-card .views-field-field-image img {
+  border: 1px solid black;
+  border-radius: 50%;
   width: 120px;
 }
 
-.contact-card .views-field-field-image {
-  border: 1px solid black;
-  border-radius: 50%;
-  overflow: hidden;
-  grid-area: picture;
+.contact-card .views-field-title {
+  font-weight: bold;
+  grid-area: name;
 }
 
-.contact-card .views-field-title,
 .contact-card .views-field-field-position {
-  line-height: 20px;
-  grid-area: title;
+  grid-area: position;
 }
 
 .contact-card .views-field-body {
