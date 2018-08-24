@@ -1,5 +1,5 @@
-.view-students .circle-button a,
-.view-faculty .circle-button a {
+.view-students .views-field-title a,
+.view-faculty .views-field-title a {
   color: #FFF;
 }
 
@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-.circle-card .circle-button {
+.circle-card .views-field-title {
   width: 100%;
   display: flex;
   align-items: center;
@@ -42,7 +42,7 @@
     margin-bottom: 50px;
   }
 
-  .circle-card .circle-image {
+  .circle-card a {
     display: flex;
     justify-content: center;
   }
@@ -68,7 +68,7 @@
     flex-direction: column-reverse;
   }
 
-  .circle-card .circle-image {
+  .circle-card .views-field-field-image {
     height: 50vw;
     overflow: hidden;
     border: solid 1px #666666;
