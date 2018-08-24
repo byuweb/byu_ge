@@ -15,13 +15,9 @@
     margin-bottom: 20px;
   }
 
-  .contact-card .phone-number { grid-area: phone }
-  .contact-card .email { grid-area: email }
-  .contact-card .location { grid-area: location }
-
-  .contact-card .contact  {
-    color: #666666;
-  }
+  .contact-card .views-field-field-phone { grid-area: phone }
+  .contact-card .views-field-field-e-mail { grid-area: email }
+  .contact-card .views-field-field-room-number { grid-area: location }
 }
 
 /*Tablet View*/
@@ -47,12 +43,12 @@
     justify-content: center;
   }
 
-  .contact-card .contact .email {
+  .contact-card .contact .views-field-field-e-mail {
     padding: 0 15px;
   }
 
-  .contact-card .contact .phone-number,
-  .contact-card .contact .location {
+  .contact-card .contact .views-field-field-phone,
+  .contact-card .contact .views-field-field-room-number {
     border-right: 2px solid #666666;
     padding: 0 15px;
   }
@@ -68,12 +64,12 @@
     margin-bottom: 30px;
   }
 
-  .contact-card .contact-picture {
+  .contact-card .views-field-field-image {
     height: 120px;
     margin-bottom: 10px;
   }
 
-  .contact-card .contact-name {
+  .contact-card .views-field-field-position {
     margin-bottom: 10px;
   }
 
@@ -84,20 +80,20 @@
     margin-top: 10px;
   }
 
-  .contact-card .phone-number,
-  .contact-card .location {
+  .contact-card .views-field-field-phone,
+  .contact-card .views-field-field-room-number {
     padding: 0 15px;
   }
 
-  .contact-card .phone-number {
+  .contact-card .views-field-field-phone {
     border-right: 2px solid #666666;
   }
 
-  .contact-card .email {
+  .contact-card .views-field-field-e-mail {
     margin-top: 10px;
   }
 
-  .contact-card .contact-description {
+  .contact-card .views-field-body {
     padding: 10px 0;
   }
 
@@ -113,19 +109,20 @@
   width: 120px;
 }
 
-.contact-card .contact-picture {
+.contact-card .views-field-field-image {
   border: 1px solid black;
   border-radius: 50%;
   overflow: hidden;
   grid-area: picture;
 }
 
-.contact-card .contact-name {
+.contact-card .views-field-title,
+.contact-card .views-field-field-position {
   line-height: 20px;
   grid-area: title;
 }
 
-.contact-card .contact-description {
+.contact-card .views-field-body {
   color: #666666;
   border-top: 1px lightgray solid;
   border-bottom: 1px #c5c5c5 solid;
@@ -134,13 +131,13 @@
   align-items: center;
 }
 
-.contact-card .contact-description p {
+.contact-card .views-field-body p {
   line-height: 20px;
   margin-bottom: 0;
 }
 
-.contact-card .phone-number img,
-.contact-card .email img,
-.contact-card .location img {
+.contact-card .views-field-field-phone img,
+.contact-card .views-field-field-e-mail img,
+.contact-card .views-field-field-room-number img {
   width: 25px;
 }
