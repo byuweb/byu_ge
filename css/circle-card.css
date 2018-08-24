@@ -1,9 +1,18 @@
-div.view-students div.circle-button a{color: #FFF;}
+div.view-students div.circle-button a,
+div.view-faculty div.circle-button a {
+  color: #FFF;
+}
+
 .circle-card {
   width: 100%;
   display: flex;
 }
-.circle-image a {display:flex;justify-content: center;}
+
+.circle-image a {
+  display:flex;
+  justify-content: center;
+}
+
 .circle-card .circle-button {
   width: 100%;
   display: flex;
@@ -14,7 +23,6 @@ div.view-students div.circle-button a{color: #FFF;}
   padding: 5px;
   background-color: #002e5d;
   line-height: 20px;
-  color: white !important;
   font-family: "Ringside Narrow A", "Ringside Narrow B", sans-serif;
   text-transform: uppercase;
   text-align: center;
@@ -73,17 +81,5 @@ div.view-students div.circle-button a{color: #FFF;}
   .views-students .views-row,
   .view-faculty .views-row {
     width: 100%;
-  }
-}
-
-@media screen and (min-width: 541px) {
-  #page-title {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  #page-title {
-    text-align: center;
   }
 }
